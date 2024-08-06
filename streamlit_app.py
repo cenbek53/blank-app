@@ -10,9 +10,7 @@ def customer():
     df = pd.DataFrame(
         np.random.randn(10, 5), columns=("col %d" % i for i in range(5)))
     st.table(df)
-
-    st.form_submit_button(label="Submit", help=None, on_click=None, args=None, kwargs=None, *, type="secondary", disabled=False, use_container_width=False)
-
+    
 def contacts():
     st.write("ss")
 
