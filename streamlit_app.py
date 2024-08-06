@@ -15,5 +15,5 @@ def projects():
 def machinery():
     st.write("ss")
 
-pg = st.navigation([st.Page(home), st.Page(customer)], st.Page(contacts)], st.Page(projects)], st.Page(machinery)])
+pg = st.navigation([st.Page(home), st.Page(customer), st.Page(contacts), st.Page(projects), st.Page(machinery)])
 pg.run()
