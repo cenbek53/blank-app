@@ -10,6 +10,17 @@ def customer():
     df = pd.DataFrame(
         np.random.randn(10, 5), columns=("col %d" % i for i in range(5)))
     st.table(df)
+
+    with st.form("my_form"):
+    st.write("Create New Customer")
+    slider_val = st.slider("Form slider")
+    checkbox_val = st.checkbox("Form checkbox")
+
+    # Every form must have a submit button.
+    submitted = st.form_submit_button("Submit")
+    if submitted:
+        st.write("slider", slider_val, "checkbox", checkbox_val)
+st.write("Outside the form")
     
 def contacts():
     st.write("ss")
