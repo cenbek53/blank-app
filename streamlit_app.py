@@ -1,19 +1,23 @@
 import streamlit as st
 
-def Home():
+def home():
     st.write("sss")
 
-def Customer():
+def customer():
     st.write("ss")
 
-def Contacts():
+def contacts():
     st.write("ss")
 
-def Projects():
+def projects():
     st.write("ss")
 
-def Machinery():
+def machinery():
     st.write("ss")
 
-pg = st.navigation([st.Page(Home), st.Page(Customer), st.Page(Contacts), st.Page(Projects), st.Page(Machinery)])
+pg = st.navigation([st.Page(home, title="Home", icon=None), 
+                    st.Page(customer, title="Customer", icon=None), 
+                    st.Page(contacts, title="Contacts", icon=None), 
+                    st.Page(projects, title="Projects", icon=None), 
+                    st.Page(machinery,title="Machinery", icon=None)])
 pg.run()
